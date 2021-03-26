@@ -23,6 +23,20 @@
 	</div>
 	<div class="row">
 		<h1>  Calculadora	</h1>
+		<div class="row">
+			<form>
+				<div class="mb-3">
+				  <label for="primeiroValor">Insira a baixo o primeiro valor:</label>
+				  <input type="number" class="form-control" id="primeiroValor"  placeholder="Exemplo:'2'">
+				</div>
+				<div class="mb-3">
+					<label for="segundoValor">Insira a baixo o segundo valor:</label>
+					<input type="number" class="form-control" id="segundoValor"  placeholder="Exemplo:'3'">
+				  </div>
+				
+				<button type="submit"  class="btn btn-primary">Somar os valores</button>
+			  </form>
+		</div>
 	</div>
 	<div class="row">
 		<h1>  Rodapé	</h1>
