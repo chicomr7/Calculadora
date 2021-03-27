@@ -8,48 +8,105 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
  
-<style > 
+    <style > 
      body{
 		font-family: 'Noto Sans JP', sans-serif;
-		background-color: aqua;
+		background-image: url('https://image.freepik.com/fotos-gratis/teclado-diario-e-calculadora-no-plano-de-fundo_23-2148183022.jpg');
 	 }
 	 
 	</style>
 
-
-
-
-
 </head>
 
 <body >
+	<div class="container">
 	<center>
  <div class="container"> 
-	<div class="row">
-		<h1>  Cabeçalho	</h1>
-	</div>
+	
 	<div class="row">
 		<h1>  Calculadora	</h1>
-		<div class="row">
-			<form>
+		<div class="mb-3">
+			<form method="POST" action="{{ route('subtrair')}}">
+				@csrf
 				<div class="mb-3">
-				  <label for="primeiroValor">Insira a baixo o primeiro valor:</label>
-				  <input type="number" class="form-control" id="primeiroValor"  placeholder="Exemplo:2">
+					
+						<div class="resultado">Insira a baixo o primeiro valor:</div>
+					
+						<style>
+						.resultado {
+							color: white;
+							border-radius: 30px;
+							background-color: black;
+							height: 30px;
+							line-height: 30px;
+							opacity: 0.9;
+						}
+						</style>
+		
+						
+						</div>
+						
+	<input type="number"  class="form-control" id="primeiroValor" name="valor1" placeholder  ="Exemplo:2">
+						
 				</div>
 				<div class="mb-3">
-					<label for="segundoValor">Insira a baixo o segundo valor:</label>
-					<input type="number" class="form-control" id="segundoValor"  placeholder="Exemplo:3">
-				  </div>
-				
+					<div class="mb-3">
+
+					</div>
+					
+					<div class="resultado">Insira a baixo o segundo valor:</div>
+					
+						<style>
+						.resultado {
+							color: white;
+							border-radius: 30px;
+							background-color: black;
+							height: 30px;
+							line-height: 30px;
+							opacity: 0.9;
+						}
+						</style>
+		<div class="row">
+
+		</div>
+		<div class="mb-3">
+
+		</div>
+		
+	<input type="number" class="form-control" id="segundoValor" name="valor2" placeholder="Exemplo:3">
+		
+				</div> 
+				<div class="container">
 				<button type="submit"  class="btn btn-primary">Subtrair os valores</button>
+				</div>
 			  </form>
 		</div>
 	</div>
-	<div class="row">
-		<h1>  Rodapé	</h1>
-	</div>
+	
  </div>
+ <div class="container">
+     
+	<style>
+	 footer {
+		position:absolute;
+		bottom:0;
+		width:80%;
+		text-align: center;
+		color: white;
+		background-color:black;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 40px;
+		opacity: 0.9;
+	
+	 }
+		</style>
+		 
+		 <footer>
+			 Todos os direitos reservados-Francisco de Jesus Coelho Morais Filho(2021);
+		 </footer>
+	 </div>
 </center>
-    
+</div>
 </body>
 </html>

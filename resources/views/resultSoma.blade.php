@@ -41,6 +41,7 @@
             font-size: 50px;
             width:100%;
             text-align: center;
+            opacity: 0.9;
         }
         
         </style>
@@ -53,6 +54,8 @@
 				@csrf
                 <div class="mb-3">
                 <div class="resultado">O resultado da soma dos valores é : {{$result}}</div>
+                </form>
+          </div>
                 <style>
                 .resultado {
                     color: white;
@@ -60,15 +63,30 @@
                     background-color: black;
                     height: 300px;
                     line-height: 300px;
-                    opacity: 0.2;
+                    opacity: 0.9;
                 }
-                </style>
 
+                </style>
+                <div>
+                <form method="GET" action="{{ route('menu')}}">
+                    <div class="mb-3">        
+                        <button type="submit"   class="btn btn-primary">Retornar ao menu de operações</button>
+                        </div>
+                    </form>
+                </div>
                 
                 </div>
-                <div class="mb-3">
-				<button type="submit"  class="btn btn-primary">Retornar ao menu de operações</button>
-                </div>
+                <style>
+                .resultado2 {
+                    color: white;
+                    border-radius: 30px;
+                    background-color: black;
+                    height: 50px;
+                    line-height: 50px;
+                    opacity: 0.9;
+                }
+                </style>
+                
 			  </form>
 		</div>
 	
@@ -86,13 +104,13 @@
     height: 40px;
     line-height: 40px;
     border-radius: 40px;
-    opacity: 0.2;
+    opacity: 0.9;
 
  }
     </style>
      
      <footer>
-         Qualquer coisa man
+         Todos os direitos reservados-Francisco de Jesus Coelho Morais Filho(2021);
      </footer>
  </div>
 </center>
