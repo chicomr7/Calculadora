@@ -8,13 +8,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
  
-    <style > 
+<style > 
      body{
 		font-family: 'Noto Sans JP', sans-serif;
-		background-image: url('https://image.freepik.com/fotos-gratis/teclado-diario-e-calculadora-no-plano-de-fundo_23-2148183022.jpg');
+		background-color: aqua;
 	 }
 	 
 	</style>
+
+
+
+
 
 </head>
 
@@ -27,18 +31,17 @@
 	<div class="row">
 		<h1>  Calculadora	</h1>
 		<div class="row">
-			<form method="POST" action="{{ route('somar')}}">
-				@csrf
+			<form>
 				<div class="mb-3">
 				  <label for="primeiroValor">Insira a baixo o primeiro valor:</label>
-				  <input type="number"  class="form-control" id="primeiroValor" name="valor1" placeholder  ="Exemplo:2">
+				  <input type="number" class="form-control" id="primeiroValor"  placeholder="Exemplo:2">
 				</div>
 				<div class="mb-3">
 					<label for="segundoValor">Insira a baixo o segundo valor:</label>
-					<input type="number" class="form-control" id="segundoValor" name="valor2" placeholder="Exemplo:3">
+					<input type="number" class="form-control" id="segundoValor"  placeholder="Exemplo:3">
 				  </div>
 				
-				<button type="submit"  class="btn btn-primary">Somar os valores</button>
+				<button type="submit"  class="btn btn-primary">Dividir os valores</button>
 			  </form>
 		</div>
 	</div>

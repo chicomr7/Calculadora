@@ -18,5 +18,9 @@ Route::get('/', function () {
 });
 
 //Route::get('/soma', ['App\Http\Controllers\CalculadoraController', 'soma']);
-Route::get('/soma', 'App\Http\Controllers\CalculadoraController@soma');
+Route::get('/soma', 'App\Http\Controllers\CalculadoraController@soma')->name ('soma');
 //Route::get('/rota', ['controller@funcao]);
+Route::get('/sub', 'App\Http\Controllers\CalculadoraController@sub');
+Route::get('/multi', 'App\Http\Controllers\CalculadoraController@multi');
+Route::get('/div', 'App\Http\Controllers\CalculadoraController@div');
+Route::post('/calcular-soma','App\Http\Controllers\CalculadoraController@calcularSoma')->name ('somar');
